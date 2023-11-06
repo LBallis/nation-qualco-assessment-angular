@@ -1,0 +1,5 @@
+<ul *ngFor="let country of countries">
+  <li><a [routerLink]="['country-languages', country.countryId, country.name]">{{country.name + ", "+ country.area + ", " + country.countryCode3}}</a></li>
+</ul>
+
+

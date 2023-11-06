@@ -1,0 +1,21 @@
+<table class="table">
+  <caption><h2>Gross Domestic Product Report</h2></caption>
+  <thead >
+    <tr class="table-header">
+      <th class="header__item">Name</th>
+      <th class="header__item">Cc3</th>
+      <th class="header__item">Year</th>
+      <th class="header__item">Population</th>
+      <th class="header__item">Gdp</th>
+    </tr>
+  </thead>
+  <tbody class="table-content">
+    <tr class="table-row" *ngFor="let gdp of gdpList">
+      <td class="table-data">{{gdp.name}}</td>
+      <td class="table-data">{{gdp.countryCode3}}</td>
+      <td class="table-data">{{gdp.year}}</td>
+      <td class="table-data">{{gdp.population}}</td>
+      <td class="table-data">{{gdp.gdp}}</td>
+    </tr>
+  </tbody>
+</table>
